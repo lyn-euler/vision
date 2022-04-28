@@ -48,7 +48,7 @@ open class FPSMonitor {
             return
         }
         isMonitoring = true
-        displayLink.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
+        displayLink.add(to: RunLoop.main, forMode: .common)
     }
 
     public func stop() {

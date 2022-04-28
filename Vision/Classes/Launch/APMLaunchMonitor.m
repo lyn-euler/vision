@@ -231,15 +231,15 @@ void hookCppInitilizers(Initializer hookInitFunc) {
 //    os_unfair_lock_unlock(&lock);
 //}
 
-__attribute__((constructor(101))) static void test()
-{
-    printf("Visioin::::1111111111\n");
-}
-
-__attribute__((constructor(101))) static void testxxx()
-{
-    printf("Visioin::::222222222\n");
-}
+//__attribute__((constructor(101))) static void test()
+//{
+//    printf("Visioin::::1111111111\n");
+//}
+//
+//__attribute__((constructor(101))) static void testxxx()
+//{
+//    printf("Visioin::::222222222\n");
+//}
 
 
 @implementation APMLaunchMonitor

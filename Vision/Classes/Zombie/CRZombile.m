@@ -8,24 +8,24 @@
 #import "CRZombile.h"
 @import ObjectiveC.runtime;
 
-static inline const char * MainBundlePath()
-{
-    static const char * path;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        path = [NSBundle mainBundle].bundlePath.UTF8String;
-    });
-    return path;
-}
+//static inline const char * MainBundlePath()
+//{
+//    static const char * path;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        path = [NSBundle mainBundle].bundlePath.UTF8String;
+//    });
+//    return path;
+//}
 
 __attribute__((weak)) BOOL isZombileExclude(Class cls)
 {
     return YES;
-    const char *imageNameCString = class_getImageName(cls);
-    if (imageNameCString != NULL && strstr(imageNameCString, MainBundlePath())) {
-        return NO;
-    }
-    return YES;
+//    const char *imageNameCString = class_getImageName(cls);
+//    if (imageNameCString != NULL && strstr(imageNameCString, MainBundlePath())) {
+//        return NO;
+//    }
+//    return YES;
 }
 
 @implementation CRZombile
