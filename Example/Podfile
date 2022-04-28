@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'Vision_Example' do
+  pod 'Vision', :path => '../'
+
+  target 'Vision_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

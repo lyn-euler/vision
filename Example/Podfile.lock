@@ -1,0 +1,32 @@
+PODS:
+  - Vision (0.1.0):
+    - Vision/All (= 0.1.0)
+  - Vision/All (0.1.0):
+    - Vision/FPS
+    - Vision/Launch
+    - Vision/Metric
+    - Vision/Util
+    - Vision/Zombie
+  - Vision/FPS (0.1.0)
+  - Vision/Launch (0.1.0)
+  - Vision/Metric (0.1.0)
+  - Vision/Util (0.1.0)
+  - Vision/Zombie (0.1.0):
+    - Vision/Zombie-Arc
+    - Vision/Zombile-NoArc
+  - Vision/Zombie-Arc (0.1.0)
+  - Vision/Zombile-NoArc (0.1.0)
+
+DEPENDENCIES:
+  - Vision (from `../`)
+
+EXTERNAL SOURCES:
+  Vision:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Vision: 7303edd53a5799c66271323914b1d8246759a220
+
+PODFILE CHECKSUM: b369df21709fabf3917bcca0bd1c6acaa54593b5
+
+COCOAPODS: 1.11.3
