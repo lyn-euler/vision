@@ -9,12 +9,22 @@
 #import "ModInitTeest.h"
 @import Vision;
 
-void myHookedInit(int argc, const char* argv[], const char* envp[], const char* apple[], const void * vars)  {
+// override
+// const BOOL APMLaunchMonitorLogEnable = NO;
+
+void myHookedInit(int argc,
+                  const char *argv[],
+                  const char *envp[],
+                  const char *apple[],
+                  const void *vars)
+{
     hookedModInitFunc(argc, argv, envp, apple, vars);
 }
+
 __attribute__((constructor(101))) static void tetttt()
 {
     printf("风刀霜剑风刀霜剑分开了的\n");
+    usleep(1000);
 }
 
 @implementation ModInitTeest

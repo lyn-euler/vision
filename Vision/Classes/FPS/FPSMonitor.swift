@@ -28,9 +28,19 @@ open class FPSMonitor {
     }
 
     private var lastTickTime: TimeInterval
-
+    private var preIsMonitoring = false
     private init() {
         lastTickTime = 0
+
+        NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: nil) { [unowned self] _ in
+            if preIsMonitoring {
+                start()
+            }
+        }
+        NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: nil) { [unowned self] _ in
+            preIsMonitoring = isMonitoring
+            stop()
+        }
     }
 
     deinit {
@@ -75,6 +85,7 @@ open class FPSMonitor {
 
     private var tickCount: Int = 0
     @objc private func tick(_ displayLink: CADisplayLink) {
+        print("tick")
         if lastTickTime < Double.ulpOfOne {
             lastTickTime = displayLink.timestamp
             return

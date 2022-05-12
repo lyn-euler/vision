@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Vision'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Vision.'
+  s.summary          = 'A APM framework for iOS.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -80,6 +80,7 @@ TODO: Add long description of the pod here.
   s.subspec 'Zombile-NoArc' do |ss|
     ss.source_files = 'Vision/Classes/Zombie/NoArc/*'
     ss.requires_arc = false
+    ss.dependency 'Vision/Zombie-Arc'
   end
   
   s.subspec 'Zombie' do |ss|

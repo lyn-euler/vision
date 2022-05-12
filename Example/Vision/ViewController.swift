@@ -15,6 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        FPSMonitor.shared.start()
         APMTracker.duration(name: "test") {
             print("test")
         }

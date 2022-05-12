@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
+extern const BOOL APMLaunchMonitorLogEnable;
 // 启动时间ms
 extern double AppLoadTime;
 extern void hookedModInitFunc(int argc, const char* argv[], const char* envp[], const char* apple[], const void * vars);

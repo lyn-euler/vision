@@ -8,9 +8,9 @@
 #import "CRZombileObject.h"
 #import "CRZombile.h"
 
-@interface CRZombileObject()
+@interface CRZombileObject ()
 {
-    char * origClsName;
+    char *origClsName;
 }
 @end
 

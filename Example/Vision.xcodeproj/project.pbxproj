@@ -33,6 +33,7 @@
 		12F70EA9BAB3419F797F32D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2FD6F1E0FC0C7A2E35C18119 /* Pods-Vision_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vision_Example.debug.xcconfig"; path = "Target Support Files/Pods-Vision_Example/Pods-Vision_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4081D039921F3B13B5885D1C /* Vision.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Vision.podspec; path = ../Vision.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E8F4879282A48CD001338AA /* sort_ld_frameworks.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = sort_ld_frameworks.rb; path = ../sort_ld_frameworks.rb; sourceTree = "<group>"; };
 		4E92D33828191A3A00A8EFE1 /* Vision_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vision_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E92D33928191A3A00A8EFE1 /* ModInitTeest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModInitTeest.h; sourceTree = "<group>"; };
 		4E92D33A28191A3A00A8EFE1 /* ModInitTeest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModInitTeest.m; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				4E8F4879282A48CD001338AA /* sort_ld_frameworks.rb */,
 				4081D039921F3B13B5885D1C /* Vision.podspec */,
 				12F70EA9BAB3419F797F32D0 /* README.md */,
 				04706F008759C55857975A91 /* LICENSE */,

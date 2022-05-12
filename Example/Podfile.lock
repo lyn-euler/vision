@@ -15,7 +15,8 @@ PODS:
     - Vision/Zombie-Arc
     - Vision/Zombile-NoArc
   - Vision/Zombie-Arc (0.1.0)
-  - Vision/Zombile-NoArc (0.1.0)
+  - Vision/Zombile-NoArc (0.1.0):
+    - Vision/Zombie-Arc
 
 DEPENDENCIES:
   - Vision (from `../`)
@@ -25,8 +26,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Vision: 25746dfd267a36d17b6d1c0b32465f4058721380
+  Vision: 7f10d5effe0b7e684dfa240054398ae2b12403c0
 
-PODFILE CHECKSUM: b369df21709fabf3917bcca0bd1c6acaa54593b5
+PODFILE CHECKSUM: 333adcc9c3f88c62d8495403e319da8ade55f150
 
 COCOAPODS: 1.11.3
